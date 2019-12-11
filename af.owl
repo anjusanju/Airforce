@@ -1,0 +1,1296 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#"
+     xml:base="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_aircraft -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_aircraft">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Combact_aircraft"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Helicopter_aircraft"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Trainer_aircraft"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_appiled -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_appiled">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_branches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_branches">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_received_award -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_received_award">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#gallentry_award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_service -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#has_service">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Canteen_service"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Housing_service"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Medical_service"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Pension_service"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#works_as -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#works_as">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#AID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#AID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Address">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Age">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft_details -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft_details">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Airman -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Airman">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award_won_by -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award_won_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#BranchID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#BranchID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Exairman -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Exairman">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Fname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Fname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Lname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Lname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Year">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_height">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft_details"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Combact_aircraft"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Helicopter_aircraft"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Trainer_aircraft"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft_details"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Combact_aircraft"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Helicopter_aircraft"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Trainer_aircraft"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_location">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft_details"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft_details"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircraft_speed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft_details"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch_location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch_location">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#education -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#education">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#first_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_role -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_role">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#last_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_canteen_item -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_canteen_item">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_houses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_houses">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_no_of_aircraft -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_no_of_aircraft">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_no_staff -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_no_staff">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#branch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_number_awards -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#total_number_awards">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Canteen_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Canteen_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Combact_aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Combact_aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Helicopter_aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Helicopter_aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Housing_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Housing_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Medical_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Medical_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Pension_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Pension_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Trainer_aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Trainer_aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#gallentry_award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#gallentry_award">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Vahyu_sena_Medal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Vahyu_sena_Medal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+        <Award_won_by>Santhosh</Award_won_by>
+        <Award_won_by>Sasvath Pathi</Award_won_by>
+        <Award_won_by>Sridhar M</Award_won_by>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aerial_vechiles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aerial_vechiles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+        <has_aircraft rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#fixed_wing_aircraft"/>
+        <aircraft_height>5 m</aircraft_height>
+        <aircraft_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</aircraft_id>
+        <aircraft_location>Bangalore</aircraft_location>
+        <aircraft_name>HAL_Tejas</aircraft_name>
+        <aircraft_speed>2.0 Mach</aircraft_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aerial_vechiles_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aerial_vechiles_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+        <has_aircraft rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#rotary_wing_aircraft"/>
+        <aircraft_height>4 m</aircraft_height>
+        <aircraft_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</aircraft_id>
+        <aircraft_location>Delhi</aircraft_location>
+        <aircraft_name>HAL_kiran</aircraft_name>
+        <aircraft_speed>1.8Mach</aircraft_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_commander -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_commander">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">011</AID>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</Age>
+        <BranchID>IAFC 04</BranchID>
+        <Fname>Preethi</Fname>
+        <Lname>Lokesh</Lname>
+        <total_number_awards rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</total_number_awards>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_marshal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_marshal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">013</AID>
+        <BranchID>IAFSC 07</BranchID>
+        <Fname>Harshitha</Fname>
+        <Gender>Female</Gender>
+        <Lname>P</Lname>
+        <total_number_awards rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</total_number_awards>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_vice_marshal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_vice_marshal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">014</AID>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</Age>
+        <BranchID>IAFWC 08</BranchID>
+        <Fname>Brundha</Fname>
+        <Gender>Female</Gender>
+        <Lname>M</Lname>
+        <total_number_awards rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</total_number_awards>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircheif_marshal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircheif_marshal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">018</AID>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</Age>
+        <BranchID>IAFCE 08</BranchID>
+        <Fname>Ashwin</Fname>
+        <Gender>Male</Gender>
+        <Lname>M</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircheif_marshal"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</AID>
+        <Address>Bangalore</Address>
+        <Airman>servers as aircheif marshal</Airman>
+        <BranchID>IAFB01</BranchID>
+        <Fname>Aishwarya</Fname>
+        <Gender>Female</Gender>
+        <Lname>Nandakumar</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_vice_marshal"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</AID>
+        <Airman>server as air_vice_marshal</Airman>
+        <BranchID>IAFD02</BranchID>
+        <Fname>Shakthi</Fname>
+        <Gender>Male</Gender>
+        <Lname>Swaroop</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_vice_marshal"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03</AID>
+        <Airman>serves as air_vice_marshal</Airman>
+        <BranchID>IAFCN01</BranchID>
+        <Fname>Arvindh</Fname>
+        <Gender>Male</Gender>
+        <Lname>Kannan</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_commander"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04</AID>
+        <Airman>serves as air_commander</Airman>
+        <BranchID>IAFCS027</BranchID>
+        <Fname>Shruthi</Fname>
+        <Gender>Female</Gender>
+        <Lname>Lokesh</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#airman_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#flying_officer"/>
+        <Airman rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">05</Airman>
+        <Airman>serves as flying officer</Airman>
+        <BranchID>IAFWC06</BranchID>
+        <Fname>Sridhar</Fname>
+        <Lname>M</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#ashoka_chakra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#ashoka_chakra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+        <Award_won_by>Shakthi Swaroop</Award_won_by>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#canteen_item -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#canteen_item">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Canteen_service"/>
+        <branch_location>Bangalore</branch_location>
+        <branch_location>Delhi ,Head Quaters</branch_location>
+        <branch_location>Hyderabad</branch_location>
+        <branch_location>Kolkata,West Bengal</branch_location>
+        <branch_location>Sikkim , Assam</branch_location>
+        <branch_location>Tirvanthapuram,Kerala</branch_location>
+        <branch_name>IAF Eastern Command</branch_name>
+        <branch_name>IAF Northen Command</branch_name>
+        <branch_name>IAF Southern Command</branch_name>
+        <branch_name>IAF Training Institute Bangalore</branch_name>
+        <branch_name>IAF Training Institute Chennai</branch_name>
+        <branch_name>IAF Training Institute Dehradun</branch_name>
+        <branch_name>IAF Training Institute Hyderbad</branch_name>
+        <branch_name>IAF Western Command</branch_name>
+        <total_canteen_item rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_canteen_item>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#canteen_service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#canteen_service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+        <branch_location>,Sikim,Assam</branch_location>
+        <branch_location>Chennai,Tamil Nadu</branch_location>
+        <branch_location>Delhi,Head quaters</branch_location>
+        <branch_location>Hyderbad, Telgana</branch_location>
+        <branch_location>Masuri,Dehradun</branch_location>
+        <branch_location>bangalore</branch_location>
+        <branch_location>tirunathapuram,Kerala</branch_location>
+        <branch_location>west bengal,kolkata</branch_location>
+        <branch_name>IAF Bangalore</branch_name>
+        <branch_name>IAF Central Command</branch_name>
+        <branch_name>IAF Training Institute Hydrebad</branch_name>
+        <branch_name>IAF eastern command</branch_name>
+        <branch_name>IAF northen command</branch_name>
+        <branch_name>IAF southern command</branch_name>
+        <branch_name>IAF training institute Chennai</branch_name>
+        <branch_name>IAF training institute Dehradun</branch_name>
+        <branch_name>IAF western commnad</branch_name>
+        <total_canteen_item rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_canteen_item>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#central-command -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#central-command">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <has_service rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#housing_service"/>
+        <branch_location>Delhi</branch_location>
+        <branch_name>Head Quaters</branch_name>
+        <total_canteen_item rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_canteen_item>
+        <total_houses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</total_houses>
+        <total_no_of_aircraft rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</total_no_of_aircraft>
+        <total_no_staff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_no_staff>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#eastern_command -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#eastern_command">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <has_service rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#housing_service"/>
+        <branch_location>Sikim Assam</branch_location>
+        <branch_name>IAF Eastern Command</branch_name>
+        <total_canteen_item rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_canteen_item>
+        <total_houses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</total_houses>
+        <total_no_of_aircraft rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</total_no_of_aircraft>
+        <total_no_staff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</total_no_staff>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_marshal"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</Age>
+        <Exairman>served as air marshal</Exairman>
+        <Fname>shree</Fname>
+        <Gender>Female</Gender>
+        <Lname>Lakshmi</Lname>
+        <total_number_awards rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</total_number_awards>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_vice_marshal"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">034</AID>
+        <Address>mumbai</Address>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</Age>
+        <BranchID>IAFH02</BranchID>
+        <Exairman>served as air marshal</Exairman>
+        <Fname>Advaith</Fname>
+        <Gender>Male</Gender>
+        <Lname>Kannan</Lname>
+        <total_number_awards rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</total_number_awards>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#aircheif_marshal"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">045</AID>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</Age>
+        <Exairman>served as aircheif marshal</Exairman>
+        <Fname>Advitha</Fname>
+        <Gender>Female</Gender>
+        <Lname>Kannan</Lname>
+        <total_number_awards rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</total_number_awards>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#exairman_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <works_as rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#air_commander"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">045</AID>
+        <Address>Chennai</Address>
+        <BranchID>IAFB01</BranchID>
+        <Exairman>served as air commander</Exairman>
+        <Fname>shrinidhi</Fname>
+        <Gender>Male</Gender>
+        <Lname>shankar</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#fixed_wing_aircraft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#fixed_wing_aircraft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+        <aircraft_height>60 m</aircraft_height>
+        <aircraft_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03</aircraft_id>
+        <aircraft_location>Delhi</aircraft_location>
+        <aircraft_name>HAL Akash</aircraft_name>
+        <aircraft_speed>50 Mach</aircraft_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#flying_officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#flying_officer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">007</AID>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</Age>
+        <Award_won_by>vayu Sena Medal</Award_won_by>
+        <Fname>Suprith</Fname>
+        <Gender>Male</Gender>
+        <Lname>Kannan</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#gallentry_award -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#gallentry_award">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#group_captain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#group_captain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">008</AID>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</Age>
+        <Fname>Poornima</Fname>
+        <Gender>Female</Gender>
+        <Lname>Arun Kumar</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#housing_service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#housing_service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+        <branch_location>Bangalore</branch_location>
+        <branch_location>Delhi,HeadQuaters</branch_location>
+        <branch_location>Hydreabad,Telangana</branch_location>
+        <branch_location>Kolkata,westbengal</branch_location>
+        <branch_location>Masuri,Dehradun</branch_location>
+        <branch_location>Sikim,Assam</branch_location>
+        <branch_location>Tirvanthapuram,Kerala</branch_location>
+        <branch_name>IAF Northen Command</branch_name>
+        <branch_name>IAF Southern Command</branch_name>
+        <branch_name>IAF Training Bangalore</branch_name>
+        <branch_name>IAF Training Hydreabad</branch_name>
+        <branch_name>IAF Western Commmand</branch_name>
+        <branch_name>IAF eastern command</branch_name>
+        <branch_name>IAF training Dehradun</branch_name>
+        <branch_name>IAF western command</branch_name>
+        <total_houses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_houses>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+        <education>BE</education>
+        <first_name>Abhilasha</first_name>
+        <job_role>air_commander</job_role>
+        <last_name>singh</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+        <education>BSC in Computer Science</education>
+        <first_name>Harshada</first_name>
+        <job_role>air_marshal</job_role>
+        <last_name>Ananth Ram</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job_seeker_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#job"/>
+        <education>Bcom</education>
+        <first_name>Monica</first_name>
+        <job_role>air_marshal</job_role>
+        <last_name>Shanthraj</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#lieutant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#lieutant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">009</AID>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</Age>
+        <Fname>Arun</Fname>
+        <Gender>Male</Gender>
+        <Lname>Kumar</Lname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#maha_vir_chakra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#maha_vir_chakra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#gallentry_award"/>
+        <Award_won_by>Arun Kumar</Award_won_by>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#medical_service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#medical_service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+        <branch_location>Bangalore,Karnataka</branch_location>
+        <branch_location>Delhi,Head Quaters</branch_location>
+        <branch_location>Hyderabad,Telagana</branch_location>
+        <branch_location>Kolkata,Westbengal</branch_location>
+        <branch_location>Masuri,Dehradun</branch_location>
+        <branch_location>Sikkim,Assam</branch_location>
+        <branch_location>Tirunanthapuram,Kerala</branch_location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#northen_command -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#northen_command">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+        <has_service rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#housing_service"/>
+        <branch_location>Delhi,HeadQuaters</branch_location>
+        <branch_name>IAF HeadQuaters</branch_name>
+        <total_canteen_item rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_canteen_item>
+        <total_houses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</total_houses>
+        <total_no_of_aircraft rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</total_no_of_aircraft>
+        <total_no_staff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</total_no_staff>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#param_vir_chakra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#param_vir_chakra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#gallentry_award"/>
+        <Award_won_by>Arvindh Kanna</Award_won_by>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#pension_service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#pension_service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Service"/>
+        <total_no_staff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_no_staff>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#rotary_wing_aircraft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#rotary_wing_aircraft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Aircraft"/>
+        <aircraft_height>9 m</aircraft_height>
+        <aircraft_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">005</aircraft_id>
+        <aircraft_location>Chennai</aircraft_location>
+        <aircraft_name>HAL pruthvi</aircraft_name>
+        <aircraft_speed>80 Mach</aircraft_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#shourya_chakra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#shourya_chakra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Award"/>
+        <Award_won_by>Akash</Award_won_by>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#southern_command -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#southern_command">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <has_service rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#housing_service"/>
+        <branch_location>Tirunthapuram,Kerala</branch_location>
+        <branch_name>Southern Command</branch_name>
+        <total_canteen_item rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_canteen_item>
+        <total_houses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</total_houses>
+        <total_no_of_aircraft rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</total_no_of_aircraft>
+        <total_no_staff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_no_staff>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#western_command -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#western_command">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Branch"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Commands"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Training_institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <has_service rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#housing_service"/>
+        <branch_location>Kolkata,West Bengal</branch_location>
+        <branch_name>IAF Southern Command</branch_name>
+        <total_canteen_item rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</total_canteen_item>
+        <total_houses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</total_houses>
+        <total_no_of_aircraft rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</total_no_of_aircraft>
+        <total_no_staff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</total_no_staff>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#wing_commander -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#wing_commander">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w10/ontologies/2019/10/untitled-ontology-69#Air_person"/>
+        <AID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">009</AID>
+        <Fname>Ashish</Fname>
+        <Gender>Male</Gender>
+        <Lname>Parwal</Lname>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
